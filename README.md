@@ -9,4 +9,5 @@ npm install
 Server cmd : nodemon
 
 Client cmd : cd client
+             npm install
              ng serve
