@@ -1,7 +1,7 @@
 import { Component, OnInit,NgModule } from '@angular/core';
 import {ContactService} from '../contact.service'
 import {Contact} from '../contact';
-
+import {ResObj} from './Implement';
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
@@ -31,6 +31,7 @@ export class ContactsComponent implements OnInit {
     })
   }
   deleteContact(id:any){
+   var data: ResObj;
     var contacts=this.contacts
     this.contactService.deleteContact(id)
     .subscribe(data =>{
